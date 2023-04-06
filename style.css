@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Common Css */
+body {
+  font-family: "Google Sans", "Google Sans Text", Roboto, sans-serif;
+}
+
+span {
+  display: inline-block;
+}
+/* Header */
+main{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.youtubeHelp_head {
+  background-image: url("./images/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 19.0625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.help_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 100%;
+  box-shadow: 0 1px 2px 0 rgb(48 48 48 / 30%), 0 1px 3px 1px rgb(48 48 48 / 15%);
+  margin-bottom: 1.25rem;
+}
+.logo .fa-youtube {
+  color: red;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.head_text {
+  font-size: 2rem;
+  color: #0842a0;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.help_search {
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+}
+.help_search .fa-magnifying-glass {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 30px;
+}
+.help_search input {
+  width: 100%;
+  padding: 15px 70px;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgb(48 48 48 / 30%), 0 1px 3px 1px rgb(48 48 48 / 15%);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Accordion */
+.accordion_head_text {
+  max-width: 800px;
+  width: 100%;
+  margin: 30px auto;
+  font-size: 18px;
+}
+section.help_topics {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.border {
+  border-top: none !important;
+}
+.accordion_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1rem 3.25rem 1rem 4rem;
+  border-top: thin solid #a9acaa;
+}
+.accordion_head i {
+  color: #0b57d0;
+}
+.head {
+  font-weight: 600;
+}
+p.dropdown_content {
+  padding: 1rem 3.25rem 1rem 4rem;
+  cursor: pointer;
+}
+p.dropdown_content:hover {
+  background-color: rgba(11, 87, 208, 0.24);
+}
+.accordion_drop {
+  background-color: #d8e4f7;
+}
+.accordion_head:hover {
+  background-color: #efefef;
+}
+
+/* Need Help  */
+section.need_help {
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto 0 auto;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.help {
+  padding: 3rem 3.25rem 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.need_help_top {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.bottom_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.need_help_bottom {
+  padding: 20px 40px;
+  border: none;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 0 rgb(48 48 48 / 30%), 0 1px 3px 1px rgb(48 48 48 / 15%);
+}
+.bottom_text p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.bottom_text p:nth-child(2) {
+  font-size: 15px;
+}
+.bottom_icon {
+  padding: 20px;
+  background-color: #448cfb;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.need_help_top h1{
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.need_help_top span{
+  font-size: 20px;
+}
+
+
+/* Media Query */
+@media (max-width:768px){
+  .youtubeHelp_head{
+    background-image: none;
+    height: 14.0625rem;
+  }
+
+  .help{
+    padding: 3rem 3.25rem 1rem 4rem;  
+  }
+  .need_help_top h1{
+    font-size: 30px;
+  }
+  .need_help_top span {
+    font-size: 15px;
+}
+.need_help_bottom{
+  padding: 10px 20px;
+}
+.bottom_icon{
+  padding: 10px;
+}
+.bottom_text p:nth-child(1){
+  font-size: 16px;
+}
+}
+
+@media (max-width: 576px){
+  .help_search{
+    width:320px;
+  }
+  .head_text{
+    font-size: 1.5rem;
+  }
+  .help_search input{
+    font-size: 0.9rem;
+  }
+  section.need_help{
+    display: none;
+  }
+}
+
+@media(max-width:320px){
+  .help_search{
+    width:280px;
+  }
+}
